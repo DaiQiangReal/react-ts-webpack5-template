@@ -4,6 +4,8 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const isDev = process.env.DEV === "true";
 const ProgressBarPlugin = require("progress-bar-webpack-plugin");
+const fsExtra = require("fs-extra");
+fsExtra.copySync("./public/", "./dist/");
 module.exports = {
     entry: "./src/index",
     devServer: {
