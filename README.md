@@ -1,0 +1,1 @@
+# React Typescript webpack5 esbuild-loader sass eslint template
