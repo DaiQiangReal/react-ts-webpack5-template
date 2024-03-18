@@ -37,7 +37,7 @@ module.exports = {
         "guard-for-in": 1,
         "prefer-const": 1,
         "prefer-spread": 1,
-        "quotes": [2, "single", { "avoidEscape": true }],
+        "quotes": [2, "double", { "avoidEscape": true }],
         "curly":1,
         "comma-dangle":2,
         "comma-style":2,

@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from './app.module.scss';
+import React from "react";
+import "./app.css"
 
 export default ()=>{
     return <div>
-        hello <span className={styles.test}>world</span>
+        hello <span className={"text-red-500"}>world</span>
 
     </div>
 }

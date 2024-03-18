@@ -65,19 +65,24 @@ module.exports = {
                 }
             },
             {
-                test: /\.s?[ac]ss$/i,
+                test: /\.css$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "css-modules-typescript-loader",
                     {
                         loader: "css-loader",
                         options: {
-                            modules: {
-                                auto: true,
-                                localIdentName: isDev ? "[path][name]__[local]--[hash:base64:5]" : "[hash:base64:5]",
-                                localIdentContext: path.resolve(__dirname, "src")
-                            }
-
+                        }
+                    },
+                    'postcss-loader'
+                ]
+            },
+            {
+                test: /\.scss$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader",
+                        options: {
                         }
                     },
                     "sass-loader"
